@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Archivo:wght@800&family=Cabin:wght@500&family=Cinzel+Decorative:wght@900&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster+Two:wght@700&family=Montserrat:wght@500&family=Noto+Naskh+Arabic:wght@600&family=Nunito+Sans:wght@300&family=Roboto+Mono:wght@700&display=swap");
+*{
+    /* outline: red solid 2px; */
+    box-sizing: border-box;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+    scroll-behavior: smooth;
+}
+a, button{
+    cursor: pointer;
+    text-decoration: none;
+}
+body{
+    margin-top: 10vh;
+    background-image: url(/images/background\ \(3\).jpg);
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+}
+/* NAVIGATION BAR */
+header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 0 30px black;
+    z-index: 50;
+}
+.logo{
+    top: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    padding: 5px;
+    margin-left: -5%;
+    background-color: rgb(255, 194, 81);
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-links li>a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+    padding: 12px 25px;
+}
+.nav-links li>a:hover{
+    color: rgb(177, 134, 53);
+    border-bottom: 3px solid rgb(177, 134, 53);
+}
+.nav-links li>a:active{
+    background-color: rgb(177, 134, 53);
+    color: white;
+}
+/* HAMBURGER */
+#navbar.show-navbar {
+    display: block;
+}
+.hamburger-button {
+    width: 30px;
+    height: 30px;
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+}
+.bar {
+    margin-bottom: 2px;
+    width: 20px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+/* PADDING */
+.pad{
+    margin-top: -5vh;
+    margin-bottom: -2vh;
+    padding-top: 20vh;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-image: url(images/table-full-food-including-orange-juice-fruit.jpg);
+    
+}
+.pad>h1{
+    font-family: "dancing script";
+    font-weight: 100;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/* OUR STORY */
+.our-story{
+    background-color: white;
+    width: 100vw;
+    height: fit-content;
+    padding: 40px 200px;
+    /* text edit */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: rgb(200, 139, 79);
+    text-align: justify;
+    line-height: 3vh
+}
+.our-story p::first-letter {
+    font-size: 30px; 
+}
+.our-story>h1{
+    font-family: "cinzel decorative";
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(200, 139, 79);
+}
+/* AWARD */
+.award{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0px;
+    background-color: rgb(177, 134, 53);
+}
+.award>h1{
+    font-family: "montserrat";
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.award-gal{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+}
+.award-gal img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+/* OUR MISSION */
+.our-mission{
+    background-color: white;
+    width: 100vw;
+    height: fit-content;
+    padding: 40px 200px;
+    /* text edit */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: rgb(200, 139, 79);
+    text-align: justify;
+}
+.our-mission p::first-letter {
+    font-size: 30px; 
+}
+.our-mission>h1{
+    font-family: "cinzel decorative";
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(200, 139, 79);
+}
+
+
+/* FOOTER  */
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 30px black;
+    background-color: rgb(0, 0, 0);
+    /* text edit */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 50;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+.footer-describe{
+    top: 0;
+    width: 300px;
+    height: fit-content;
+    padding: 5px;
+    text-align: right;
+}
+.footer-links>a{
+    top: 0;
+    width: fit-content;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 50;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.footer-links>a:hover{
+    color: rgb(177, 134, 53);
+    border-bottom: 1px solid rgb(177, 134, 53);
+}
+.socials{
+    margin: 0 100px;
+    top: 0;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.follow{
+    margin-bottom: 30px;
+    /* text edit */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 50;
+    font-size: 17px;
+    text-align: center;
+    color: rgb(177, 134, 53);
+    border: 1px solid  rgb(177, 134, 53);
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.social-icons a>img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 380px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+
+    }
+    body{
+        width: 100%;
+        margin-top: -40px;
+    }
+    .hamburger-menu {
+        z-index: 150;
+        display: block; 
+        top: 0;
+        left: 0;
+        position: fixed;
+        padding: 10px;
+        height: 40px;
+        width: 100vw;
+        background-color: black;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+
+    }
+    /* HAMBURGER */
+    .hamburger-menu.active + header {
+        display: none;
+    }
+    .bar {
+        margin-bottom: 2px;
+        width: 20px;
+        height: 4px;
+        background-color: white;
+        border-radius: 2px;
+    }
+    /* NAVBAR */
+    header{
+        display: none;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px;
+    }
+    .logo{
+        top: 50px;
+        left: 30px;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .nav-links li{
+        list-style: none;
+        display: block;
+        margin-bottom: 15px;
+        width: 50vw;
+    }
+    .pad{
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+        background-position-x: 40%;
+        background-image: url(images/table-full-food-including-orange-juice-fruit.jpg);
+    }
+    .pad>h1{
+        margin: 60px 0 0 0;
+        font-family: "dancing script", sans-serif;
+        font-weight: 100;
+        font-size: 80px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+        /* OUR STORY */
+    .our-story{
+        background-color: white;
+        width: 100vw;
+        height: fit-content;
+        padding: 10px 30px;
+        /* text edit */
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        color: rgb(200, 139, 79);
+        text-align: justify;
+        line-height: 3vh
+    }
+    .our-story p::first-letter {
+        font-size: 30px; 
+    }
+    .our-story>h1{
+        font-family: "cinzel decorative";
+        font-weight: 800;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(200, 139, 79);
+    }
+    /* AWARD */
+    .award{
+        width: 100%;
+        height: fit-content;
+        padding: 10px 0px;
+        background-color: rgb(177, 134, 53);
+    }
+    .award>h1{
+        font-family: "montserrat";
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    .award-gal{
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        padding: 0;
+    }
+    .award-gal img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+    /* OUR MISSION */
+    .our-mission{
+        background-color: white;
+        width: 100vw;
+        height: fit-content;
+        padding: 10px 30px;
+        /* text edit */
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        color: rgb(200, 139, 79);
+        text-align: justify;
+        line-height: 3vh
+    }
+    .our-mission p::first-letter {
+        font-size: 30px; 
+    }
+    .our-mission>h1{
+        font-family: "cinzel decorative";
+        font-weight: 800;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(200, 139, 79);
+    }
+        
+    /* FOOTER  */
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        bottom: 0;
+        position: relative;
+        width: 100%;
+        box-shadow: 0 0 30px black;
+        background-color: rgb(0, 0, 0);
+        /* text edit */
+        font-family: "Montserrat", sans-serif;
+        font-weight: 50;
+        font-size: 13px;
+        color: rgb(255, 255, 255);
+    }
+    .footer-describe{
+        top: 0;
+        width: 300px;
+        height: fit-content;
+        padding: 5px;
+        text-align: justify;
+    }
+    .footer-links>a{
+        top: 0;
+        width: fit-content;
+        padding: 10px;
+        display: block;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 50;
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+    }
+    .footer-links>a:hover{
+        color: rgb(177, 134, 53);
+        border-bottom: 1px solid rgb(177, 134, 53);
+    }
+    .socials{
+        margin: 0 100px;
+        top: 0;
+        width: fit-content;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .follow{
+        margin-bottom: 30px;
+        /* text edit */
+        font-family: "Montserrat", sans-serif;
+        font-weight: 50;
+        font-size: 17px;
+        text-align: center;
+        color: rgb(177, 134, 53);
+        border: 1px solid  rgb(177, 134, 53);
+    }
+    .social-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .social-icons a>img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    
+}
