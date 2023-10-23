@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Archivo:wght@800&family=Cabin:wght@500&family=Cinzel+Decorative:wght@900&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster+Two:wght@700&family=Montserrat:wght@500&family=Noto+Naskh+Arabic:wght@600&family=Nunito+Sans:wght@300&family=Roboto+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+#000000&family=Archivo:wght@800&family=Cabin:wght@500&family=Cinzel+Decorative:wght@900&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster+Two:wght@700&family=Montserrat:wght@500&family=Noto+Naskh+Arabic:wght@600&family=Nunito+Sans:wght@300&family=Roboto+Mono:wght@700&display=swap");
 *{
     /* outline: red solid 2px; */
     box-sizing: border-box;
@@ -6,132 +6,116 @@
     transition: all 0.3s ease 0s;
     scroll-behavior: smooth;
 }
-a, button{
+a{
     cursor: pointer;
     text-decoration: none;
 }
-body{
-    margin-left: -2px;
-    margin-top: 7vh;
-    background-image: url(/images/background\ \(3\).jpg);
-    background-size: cover;
-    padding: 0;
-    width: 102%;
+button{
+    display: block;
+    margin: auto;
+    padding: 5px;
+    width: fit-content;
     height: fit-content;
+    background-color: #ffc251;
+    border: none;
+    border-bottom: 3px solid #b18635;
+    border-bottom-right-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
 }
-/* NAVIGATION BAR */
+button:hover{
+    background-color: #ffffff;
+    border: 1px solid #b18635;
+    color: #ffc251;
+}
+body{
+    padding: 0;
+    margin: auto;
+}
+.hamburgerMenu {
+    display: block;
+    cursor: pointer;
+    background-color: #000000;
+    padding: 0.5rem;
+    border-radius: 10%;
+}
+.bar {
+    width: 20px;
+    height: 2px;
+    background-color: #ffc251;
+    margin: 4px 0;
+}
+
+/* NAVBAR */
 header{
     background-color: rgb(0, 0, 0);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 30px 5%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    box-shadow: 0 0 30px black;
-    z-index: 50;
+    box-shadow: 0 0 30px #000000;
+    z-index: 10;
 }
 .logo{
-    top: 0;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
-    padding: 5px;
-    margin-left: -5%;
-    background-color: rgb(255, 194, 81);
+    padding: 1px;
+    background-color: #ffc251;
+    margin-right: 10px;
 }
 .nav-links li{
     list-style: none;
     display: inline-block;
 }
-.nav-links li>a{
+.nav-links li a{
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-size: 14px;
-    color: white;
-    padding: 12px 25px;
+    color: #ffffff;
+    padding: 12px;
 }
-.nav-links li>a:hover{
-    color: rgb(177, 134, 53);
-    border-bottom: 3px solid rgb(177, 134, 53);
+.nav-links li a:hover{
+    color: #b18635;
+    border-bottom: 1px solid #b18635;
 }
-.nav-links li>a:active{
-    background-color: rgb(177, 134, 53);
-    color: white;
+.nav-links li a:active{
+    background-color: #b18635;
+    color: #ffffff;
 }
-/* HAMBURGER */
-#navbar.show-navbar {
-    display: block;
-}
-.hamburger-button {
-    width: 30px;
-    height: 30px;
-    display: none; 
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    padding: 5px;
-}
-.bar {
-    margin-bottom: 2px;
-    width: 20px;
-    height: 4px;
-    background-color: white;
-    border-radius: 2px;
-}
-/* PADDING */
-.pad{
-    margin-top: 10vh;
-    padding-top: 30vh;
-    width: 100%;
-    height: 80vh;
-    background-size: cover;
-    background-position-y: 50%;
-    background-image: url(images/dessert\ background\ \(1\).jpg);
-}
-.pad>h1{
-    margin: 10px 0 0 0;
-    font-family: "dancing script", sans-serif;
-    font-weight: 100;
-    font-size: 150px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
+
 /* MENU */
 .menu{
+    margin: auto;
     width: 70%;
-    height: 500px;
-    padding: 10px;
-    background-color: white;
+    height: fit-content;
+    padding: 1rem;
 }
-.menu>h1{
-    margin: 5px 0 5px 0;
-    font-family: "Great Vibes";
-    font-weight: 800;
-    font-size: 80px;
+.menu h1{
+    color: #b18635;
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
     text-align: center;
-    color: rgb(177, 134, 53);
 }
-.menu>h2{
-    margin: -15px 0 20px 0;
-    font-family: roboto mono;
+.menu h2{
+    margin-top: -35px;
+    font-family: "montserrat", sans-serif;
     text-align: center;
 }
 .special{
     color: rgb(177, 134, 53);
-    font-weight: 800;
 }
 .menu-menu-list{
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
     font-size: 14px;
     color: rgb(0, 0, 0);
-    /* text-edit */
     width: 50%;
     height: fit-content;
-    margin-top: 50px;
 }
 .item p{
     display: inline-block;
@@ -139,23 +123,24 @@ header{
     margin-bottom: 5px;
 }
 .item-name{
-    padding: 12px;
+    padding: 1rem;
     width: 50%;
     text-align: left;
 }
 .price{
-    padding: 12px;
+    padding: 1rem;
     width: 50%;
     text-align: right;
 }
 /* PANCAKE MENU SECTION */
 .pancake-menu{
-    background-color: white;
-    padding: 50px;
+    margin-top: 10rem;
+    padding: 2rem;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     gap: 20px;
 }
 .pancake-menus{
@@ -163,29 +148,27 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 .pancake-poster{
     width: 30%;
-    height: 500px;
-    padding: 5px 50px;
-    background-image: url(/images/pexels-rama-khandkar-2113556.jpg);
-    background-size: cover;
-    /* text edit */
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: rgb(200, 139, 79);
-    text-align: center;
+    height: 32rem;
+    padding: 2rem;
 }
+.pancake-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* SANWICH MENU */
 .sandwich-menu{
-    background-color: white;
-    padding: 50px;
+    padding: 2rem;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
     gap: 20px;
 }
 .sandwich-menus{
@@ -193,29 +176,27 @@ header{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 .sandwich-poster{
     width: 30%;
-    height: 500px;
-    padding: 5px 50px;
-    background-image: url(/images/sandwich\ \(4\).jpg);
-    background-size: cover;
-    /* text edit */
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+    height: 32rem;
+    padding: 2rem;
 }
+.sandwich-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* DOUGHNUT MENU */
 .doughnut-menu{
-    background-color: white;
-    padding: 50px;
+    padding: 2rem;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     gap: 20px;
 }
 .doughnut-menus{
@@ -223,29 +204,27 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 .doughnut-poster{
     width: 30%;
-    height: 500px;
-    padding: 5px 50px;
-    background-image: url(/images/pexels-kristina-paukshtite-3060255.jpg);
-    background-size: cover;
-    /* text edit */
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+    height: 32rem;
+    padding: 2rem;
 }
+.doughnut-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* DESSERT MENU */
 .dessert-menu{
-    background-color: white;
-    padding: 50px;
+    padding: 2rem;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
     gap: 20px;
 }
 .dessert-menus{
@@ -253,69 +232,62 @@ header{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 .dessert-poster{
     width: 30%;
-    height: 500px;
-    padding: 5px 50px;
-    background-image: url(/images/creme-brulee.jpg);
-    background-size: cover;
-    /* text edit */
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+    height: 32rem;
+    padding: 2rem;
 }
-
-
+.dessert-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* FOOTER  */
 footer{
     display: flex;
     flex-direction: row;
-    align-items:flex-end;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
     bottom: 0;
     position: relative;
     width: 100%;
-    box-shadow: 0 0 30px black;
+    box-shadow: 0 0 30px #000000;
     background-color: rgb(0, 0, 0);
-    /* text edit */
     font-family: "Montserrat", sans-serif;
-    font-weight: 50;
-    font-size: 13px;
-    color: rgb(255, 255, 255);
+    font-size: 10px;
+    color: #ffffff;
 }
 .footer-describe{
-    top: 0;
-    width: 300px;
+    width: 30%;
     height: fit-content;
     padding: 5px;
     text-align: right;
 }
-.footer-links>a{
-    top: 0;
+.footer-links {
     width: fit-content;
-    padding: 10px;
+    padding: 0rem;
+}
+.footer-links a{
+    width: fit-content;
+    padding: 3px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 50;
     font-size: 12px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
-.footer-links>a:hover{
-    color: rgb(177, 134, 53);
-    border-bottom: 1px solid rgb(177, 134, 53);
+.footer-links a:hover{
+    color: #b18635;
+    border-bottom: 1px solid #b18635;
 }
 .socials{
-    margin: 0 100px;
-    top: 0;
     width: fit-content;
     padding: 10px;
     display: flex;
@@ -323,13 +295,12 @@ footer{
 }
 .follow{
     margin-bottom: 30px;
-    /* text edit */
     font-family: "Montserrat", sans-serif;
     font-weight: 50;
     font-size: 17px;
     text-align: center;
-    color: rgb(177, 134, 53);
-    border: 1px solid  rgb(177, 134, 53);
+    color: #b18635;
+    border: 1px solid  #b18635;
 }
 .social-icons{
     display: flex;
@@ -338,247 +309,195 @@ footer{
     align-items: center;
     gap: 15px;
 }
-.social-icons a>img{
-    width: 50px;
-    height: 50px;
+.social-icons a img{
+    width: 40px;
+    height: 40px;
     object-fit: cover;
 }
+
+
 /* MEDIA QUERY */
-/* HAMBURGER TOGGLE */
-@media (max-width: 700px) {
-    /* HAMBURGER */
-    .hamburger-menu {
-        z-index: 150;
-        display: block; 
-        top: 0;
-        left: 0;
+/*450px - MOBILE DEVICES*/
+@media (max-width: 450px) {
+    .hamburgerMenu {
+        display: block;
         position: fixed;
-        padding: 20px;
-        height: 60px;
-        width: 100%;
-        background-color: black;
-        box-shadow: 0 0 10px rgb(3, 3, 3);
+        top: 20px;
+        right: 20px; 
+        z-index: 30; 
     }
-    .hamburger-menu.active + header {
-        display: none;
-    }
-    .bar {
-        margin-bottom: 3px;
-        width: 20px;
-        height: 4px;
-        background-color: white;
-        border-radius: 2px;
-    }
-    /* NAVBAR */
-    header{
-        display: none;
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        position: fixed;
-        top: 30px;
-        left: 0;
-        padding: 20px;
-    }
-    .logo{
-        top: 70px;
-        left: 50px;
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
+    /* NAVIGATION BAR */
+    .nav-links{
+        width: fit-content;
+        margin: auto;
     }
     .nav-links li{
-        list-style: none;
         display: block;
-        margin-bottom: 15px;
-        width: 50vw;
+        margin-bottom: 1rem;
+        width: fit-content;
     }
-}
- /* 576PX HAMBURGER TOGGLE ON */
-@media (max-width: 576px) {
-    body{
-        width: 102%;
-        margin-left: -7px;
-    }
-    .pad{
-        height: 500px;
-        background-size: cover;
-        background-position-x: 30%;
-    }
+    
     /* MENU */
     .menu{
-        margin-bottom: -50px;
-        width: 99vw;
+        margin: auto;
+        margin-top: -2rem;
+        width: 100%;
         height: fit-content;
-    }
-    .menu>h1{
-        font-size: 40px;
-    }
-    .menu>h2{
-        font-size: 15px;
+        padding: 1rem;
     }
     .menu-menu-list{
-        margin: auto;
-        margin-top: -20px;
-        font-size: 8px;
-        /* text-edit */
-        width: 50%;
+        font-size: 12px;
+        width: 100%;
+        height: fit-content;
     }
     .item p{
         display: inline-block;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .item-name{
-        padding: 10px;
-        width: 74%;
+        padding: 0.5rem;
+        width: 70%;
         text-align: left;
     }
     .price{
-        padding: 10px;
-        width: 26%;
+        padding: 0.5rem;
+        width: 30%;
         text-align: right;
     }
     /* PANCAKE MENU SECTION */
     .pancake-menu{
-        width: 100%;
-        height: fit-content;
-        display: flex;
+        margin-top: 0;
+        padding: 1rem;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
+        gap: 0;
     }
     .pancake-menus{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 0;
-        margin: auto;
+        gap: 1rem;
     }
     .pancake-poster{
-        margin-top: -40px;
-        display: block;
-        width: 90vw;
-        height: 30vh;
-        padding: 5px 50px;
-        background-size: cover;
-        background-position-y: 20%;
-        /* text edit */
-        font-size: 10px;
+        margin: auto;
+        width: 100%;
+        height: 15rem;
+        padding: 1rem;
     }
+    .pancake-poster img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     /* SANWICH MENU */
     .sandwich-menu{
-        padding: 50px;
+        margin-top: 0;
+        padding: 1rem;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
+        gap: 0;
     }
     .sandwich-menus{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 0px;
-        margin: auto;
+        gap: 1rem;
     }
     .sandwich-poster{
-        margin-top: -40px;
-        display: block;
-        width: 90vw;
-        height: 30vh;
-        padding: 5px 50px;
-        background-position-y: 30%;
-        font-size: 10px;
+        margin: auto;
+        width: 100%;
+        height: 15rem;
+        padding: 1rem;
     }
+    .sandwich-poster img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     /* DOUGHNUT MENU */
     .doughnut-menu{
-        padding: 50px;
+        margin-top: 0;
+        padding: 1rem;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
+        gap: 0;
     }
     .doughnut-menus{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 0px;
-        margin: auto;
+        gap: 1rem;
     }
     .doughnut-poster{
-        margin-top: -40px;
-        display: block;
-        width: 90vw;
-        height: 30vh;
-        padding: 5px 50px;
-        background-position-y: 30%;
-        font-size: 10px;
+        margin: auto;
+        width: 100%;
+        height: 15rem;
+        padding: 1rem;
     }
+    .doughnut-poster img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     /* DESSERT MENU */
     .dessert-menu{
-        padding: 50px;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        padding: 1rem;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
+        gap: 0;
     }
     .dessert-menus{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 0px;
-        margin: auto;
+        gap: 1rem;
     }
     .dessert-poster{
-        margin-top: -40px;
-        display: block;
-        width: 90vw;
-        height: 30vh;
-        padding: 5px 50px;
-        background-position-y: 50%;
-        font-size: 10px;
+        margin: auto;
+        width: 100%;
+        height: 15rem;
+        padding: 1rem;
     }
-     /* FOOTER  */
-     footer{
-        display: flex;
-        flex-direction: column;
+    .dessert-poster img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* FOOTER  */
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 0px;
+        gap: 2rem;
+        padding: 1rem;
         font-size: 10px;
     }
     .footer-describe{
-        width: 100%;
-        padding: 5px;
-        text-align: center;
+        width: 50%;
+        padding: 0;
+        text-align: justify;
     }
-    .footer-links>a{
-        top: 0;
+    .footer-links {
         padding: 10px;
-        display: block;
-        margin-bottom: 10px;
+    }
+    .footer-links a{
         font-size: 10px;
     }
     .socials{
-        margin: auto;
-        top: 0;
-        width: fit-content;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
+        margin: 0;
+        width: 50%;
     }
     .follow{
-        margin-bottom: 5px;
-        /* text edit */
-        font-family: "Montserrat", sans-serif;
-        font-weight: 50;
-        font-size: 17px;
+        margin-bottom: 10px;
+        font-size: 15px;
     }
     .social-icons{
         display: flex;
@@ -587,235 +506,24 @@ footer{
         align-items: center;
         gap: 15px;
     }
-}
-/* 577PX - 614PX - HAMBURGER TOGGLE ON */
-@media (min-width: 577px) and (max-width: 700px) {
-    body{
-        width: 102%;
-        margin-left: -7px;
-    }
-    .pad{
-        height: 500px;
-        background-size: cover;
-        background-position-x: 30%;
-    }
-    /* MENU */
-    .menu{
-        margin-bottom: -50px;
-        width: 99vw;
-        height: fit-content;
-    }
-    .menu>h1{
-        font-size: 40px;
-    }
-    .menu>h2{
-        font-size: 15px;
-    }
-    .menu-menu-list{
-        margin: auto;
-        margin-top: -20px;
-        font-size: 8px;
-        /* text-edit */
-        width: 50%;
-    }
-    .item p{
-        display: inline-block;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .item-name{
-        padding: 10px;
-        width: 74%;
-        text-align: left;
-    }
-    .price{
-        padding: 10px;
-        width: 26%;
-        text-align: right;
-    }
-    /* PANCAKE MENU SECTION */
-    .pancake-menu{
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-    }
-    .pancake-menus{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 0;
-        margin: auto;
-    }
-    .pancake-poster{
-        margin-top: -40px;
-        display: block;
-        width: 90vw;
-        height: 30vh;
-        padding: 5px 50px;
-        background-size: cover;
-        background-position-y: 20%;
-        /* text edit */
-        font-size: 10px;
-    }
-    /* SANWICH MENU */
-    .sandwich-menu{
-        padding: 50px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-    }
-    .sandwich-menus{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
-        margin: auto;
-    }
-    .sandwich-poster{
-        margin-top: -40px;
-        display: block;
-        width: 90vw;
-        height: 30vh;
-        padding: 5px 50px;
-        background-position-y: 30%;
-        font-size: 10px;
-    }
-    /* DOUGHNUT MENU */
-    .doughnut-menu{
-        padding: 50px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-    }
-    .doughnut-menus{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
-        margin: auto;
-    }
-    .doughnut-poster{
-        margin-top: -40px;
-        display: block;
-        width: 90vw;
-        height: 30vh;
-        padding: 5px 50px;
-        background-position-y: 30%;
-        font-size: 10px;
-    }
-    /* DESSERT MENU */
-    .dessert-menu{
-        padding: 50px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-    }
-    .dessert-menus{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
-        margin: auto;
-    }
-    .dessert-poster{
-        margin-top: -40px;
-        display: block;
-        width: 90vw;
-        height: 30vh;
-        padding: 5px 50px;
-        background-position-y: 50%;
-        font-size: 10px;
-    }
-     /* FOOTER  */
-     footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-        font-size: 10px;
-    }
-    .footer-describe{
-        width: 100%;
-        padding: 5px;
-        text-align: center;
-    }
-    .footer-links>a{
-        top: 0;
-        padding: 10px;
-        display: block;
-        margin-bottom: 10px;
-        font-size: 10px;
-    }
-    .socials{
-        margin: auto;
-        top: 0;
-        width: fit-content;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-    .follow{
-        margin-bottom: 5px;
-        /* text edit */
-        font-family: "Montserrat", sans-serif;
-        font-weight: 50;
-        font-size: 17px;
-    }
-    .social-icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+    .social-icons a img{
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
     }
 }
-/* 700PX - 992PX - HAMBURGER TOGGLE OFF */
-@media (min-width: 701px) and (max-width: 992px) {
-    body{
-        width: 102%;
-        margin-left: -1px;
-    }
+
+/* 451PX - 1200PX - IPADS & TABETS */
+@media (min-width: 451px) and (max-width: 1200px) {
     /* MENU */
     .menu{
         width: 60%;
-        height: fit-content;
-        padding: 10px;
-        background-color: rgb(255, 255, 255);
-    }
-    .menu>h1{
-        margin: 5px 0 5px 0;
-        font-family: "Great Vibes";
-        font-weight: 800;
-        font-size: 50px;
-        text-align: center;
-        color: rgb(177, 134, 53);
-    }
-    .menu>h2{
-        margin: -15px 0 20px 0;
-        font-family: roboto mono;
-        text-align: center;
+        padding: 0rem;
     }
     .menu-menu-list{
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
         font-size: 10px;
-        color: rgb(0, 0, 0);
-        /* text-edit */
         width: 50%;
         height: fit-content;
-        margin-top: 20px;
     }
     .item p{
         display: inline-block;
@@ -823,173 +531,98 @@ footer{
         margin-bottom: 5px;
     }
     .item-name{
-        padding: 2px 0px;
-        width: 75%;
+        padding: 0.5rem;
+        width: 72%;
         text-align: left;
     }
     .price{
-        padding: 2px 0px;
-        width: 25%;
+        padding:  0.5rem;
+        width: 28%;
         text-align: right;
     }
     /* PANCAKE MENU SECTION */
     .pancake-menu{
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
+        margin-top: 7rem;
+        padding: 0.5rem;
+        gap: 0px;
+        align-items: flex-end;
     }
     .pancake-menus{
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+        gap: 0rem;
     }
     .pancake-poster{
-        margin: auto;
         width: 40%;
-        height: 50vh;
-        padding: 10px;
-        /* text edit */
-        font-size: 14px;
+        height: 15rem;
+        padding: 0.5rem;
     }
+    .pancake-poster img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     /* SANWICH MENU */
     .sandwich-menu{
-        padding: 10px;
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 10px;
+        padding: 0.5rem;
+        gap: 0px;
+        align-items: flex-end;
     }
     .sandwich-menus{
-        display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+        gap: 0rem;
     }
     .sandwich-poster{
-        margin: auto;
         width: 40%;
-        height: 50vh;
-        padding: 10px;
-        /* text edit */
-        font-size: 10px;
+        height: 15rem;
+        padding: 0.5rem;
     }
+    .sandwich-poster img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     /* DOUGHNUT MENU */
     .doughnut-menu{
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
+        padding: 0.5rem;
+        gap: 0px;
+        align-items: flex-end;
     }
     .doughnut-menus{
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+        gap: 0rem;
     }
     .doughnut-poster{
-        margin: auto;
         width: 40%;
-        height: 50vh;
-        padding: 10px;
-        /* text edit */
-        font-size: 10px;
+        height: 15rem;
+        padding: 0.5rem;
     }
+    .doughnut-poster img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     /* DESSERT MENU */
     .dessert-menu{
-        padding: 10px;
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 10px;
+        margin-bottom: 3rem;
+        padding: 0.5rem;
+        gap: 0px;
+        align-items: flex-end;
     }
     .dessert-menus{
-        display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+        gap: 0rem;
     }
     .dessert-poster{
-        margin: auto;
         width: 40%;
-        height: 50vh;
-        padding: 10px;
-        /* text edit */
-        font-size: 10px;
+        height: 15rem;
+        padding: 0.5rem;
     }
-    /* FOOTER  */
-    footer{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: center;
-        gap: 10px;
-        padding: 20px;
-        bottom: 0;
-        position: relative;
+    .dessert-poster img{
         width: 100%;
-        box-shadow: 0 0 30px black;
-        background-color: rgb(0, 0, 0);
-        /* text edit */
-        font-family: "Montserrat", sans-serif;
-        font-weight: 50;
-        font-size: 10px;
-        color: rgb(255, 255, 255);
-    }
-    .footer-describe{
-        top: 0;
-        width: 250px;
-        height: fit-content;
-        padding: 5px;
-        text-align: right;
-    }
-    .footer-links>a{
-        top: 0;
-        width: fit-content;
-        padding: 10px;
-        display: block;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 50;
-        font-size: 12px;
-        color: rgb(255, 255, 255);
-    }
-    .footer-links>a:hover{
-        color: rgb(177, 134, 53);
-        border-bottom: 1px solid rgb(177, 134, 53);
-    }
-    .socials{
-        margin: 0 0 0 10px;
-        top: 0;
-        width: fit-content;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-    .follow{
-        margin-bottom: 30px;
-        /* text edit */
-        font-family: "Montserrat", sans-serif;
-        font-weight: 50;
-        font-size: 17px;
-        text-align: center;
-        color: rgb(177, 134, 53);
-        border: 1px solid  rgb(177, 134, 53);
-    }
-    .social-icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-    .social-icons a>img{
-        width: 50px;
-        height: 50px;
+        height: 100%;
         object-fit: cover;
     }
 }

@@ -3,258 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Website Icon" type="png" href="/images/logo svg.svg">
+    <link rel="icon" type="image/png" href="/images/logo svg.svg">
     <link rel="stylesheet" href="Menu.css">
-    <title>Limnah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Menu</title>
 </head>
 <body>
-    <!-- JAVASCRIPT CODE -->
-        <script>
-            function toggleNav() {
-            var hamburger = document.querySelector('.hamburger-menu');
-            var header = document.querySelector('header');
-            hamburger.classList.toggle('active');
-            header.classList.toggle('active');
-            }                  
-        </script>
     <!-- HAMBURGER BUTTON -->
-    <div class="hamburger-menu" onclick="toggleNav()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+    <div class="hamburgerMenu" onclick="toggleNav()">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
     </div>
+
     <!-- NAVBAR -->
-    <header>
+    <header id="navbar"> 
         <img class="logo" src="/images/logo jpg.jpg" alt="logo">
-        <nav id="navbar">
+        <nav>
             <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="Menu.html">Menu</a></li>
                 <li><a href="#">Review</a></li>
                 <li><a href="#">Order</a></li>
             </ul>
         </nav>
-        <div class="hamburger-button" id="hamburger-button">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
     </header>
-    <!-- PADDING -->
-    <section class="pad">
-        <h1>Menu</h1>
-    </section>
-    <!-- PANCAKE MENU -->
-    <section class="pancake-menu">
-        <div class="pancake-poster">
-            <h1>Straw Berry Pancakes</h1>
-            <p>
-                These strawberry pancakes are fluffy and Delicious. 
-                Serve for breakfast, as a snack or as a lunch box filler and 
-                enjoy bursts of strawberry in every bite.
-            </p>
-        </div>
-        <div class="menu">
-                <h1>Tasty</h1>
-                <h2>PANCAKES</h2>
-            <div class="pancake-menus">
-                <div class="menu-menu-list">
-                    <article class="item">
-                        <span class="special"><p class="item-name">Strawberry Pancakes</p><p class="price">$ 3.00</p></span>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Banana Pancakes</p><p class="price">$ 3.75</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">oatmeal Pancakes</p><p class="price">$ 3.50</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Bluebery Pancakes</p><p class="price">$ 4.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Coconut Pancakes</p><p class="price">$ 4.50</p>
-                    </article>
-                </div>
-                <div class="menu-menu-list">
-                    <article class="item">
-                        <p class="item-name">Chococlate Pancakes</p><p class="price">$ 3.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Scottish Pancakes</p><p class="price">$ 3.75</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Dutch Baby</p><p class="price">$ 3.50</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Oladky</p><p class="price">$ 4.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Cachapas</p><p class="price">$ 4.50</p>
-                    </article>
+
+    <!-- MAIN  -->
+    <main>
+        <!-- PANCAKE MENU -->
+        <section class="pancake-menu">
+            <div class="pancake-poster">
+                <img src="images/pancakePoster.jpg" alt="">
+            </div>
+            <div class="menu">
+                    <h1>Tasty</h1>
+                    <h2>PANCAKES</h2>
+                <div class="pancake-menus">
+                    <div class="menu-menu-list">
+                        <article class="item">
+                            <span class="special"><p class="item-name">Strawberry Pancakes</p><p class="price">$ 3.00</p></span>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Banana Pancakes</p><p class="price">$ 3.75</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">oatmeal Pancakes</p><p class="price">$ 3.50</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Bluebery Pancakes</p><p class="price">$ 4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Coconut Pancakes</p><p class="price">$ 4.50</p>
+                        </article>
+                    </div>
+                    <div class="menu-menu-list">
+                        <article class="item">
+                            <p class="item-name">Chococlate Pancakes</p><p class="price">$ 3.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Scottish Pancakes</p><p class="price">$ 3.75</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Dutch Baby</p><p class="price">$ 3.50</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Oladky</p><p class="price">$ 4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Cachapas</p><p class="price">$ 4.50</p>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- SANDWICH MENU -->
-    <section class="sandwich-menu">
-        <div class="sandwich-poster">
-            <h1>Croque Monsieur Sandwich</h1>
-            <p>
-                Grilled to perfection, a croque monsieur sandwich starts with two 
-                pieces of bread that are buttered. Ham, and gruyere cheese are placed 
-                in the middle. Once assembled, the sandwich is dipped in an egg wash. 
-                It is then grilled or baked for a crunchy experience.
-            </p>
-        </div>
-        <div class="menu">
-                <h1>Delicious</h1>
-                <h2>SANDWICHES</h2>
-            <div class="sandwich-menus">
-                <div class="menu-menu-list">
-                    <article class="item">
-                        <span class="special"><p class="item-name">Croque Monsieur Sandwich</p><p class="price">$ 3.00</p></span>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Panini Sandwich</p><p class="price">$ 3.75</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Falafel Sandwich</p><p class="price">$ 3.50</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Banh Mi Sandwich</p><p class="price">$ 4.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Grilled Sandwich</p><p class="price">$ 4.50</p>
-                    </article>
-                </div>
-                <div class="menu-menu-list">
-                    <article class="item">
-                        <p class="item-name">Pastrami Sandwich</p><p class="price">$ 3.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">American club Sandwich</p><p class="price">$ 3.75</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Tuna Sandwich</p><p class="price">$ 3.50</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Steak Sandwich</p><p class="price">$ 4.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Double Decker Sandwich</p><p class="price">$ 4.50</p>
-                    </article>
+        </section>
+
+        <!-- SANDWICH MENU -->
+        <section class="sandwich-menu">
+            <div class="sandwich-poster">
+                <img src="images/sandwichPoster.jpg" alt="">
+            </div>
+            <div class="menu">
+                    <h1>Delicious</h1>
+                    <h2>SANDWICHES</h2>
+                <div class="sandwich-menus">
+                    <div class="menu-menu-list">
+                        <article class="item">
+                            <span class="special"><p class="item-name">Croque Monsieur Sandwich</p><p class="price">$ 3.00</p></span>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Panini Sandwich</p><p class="price">$ 3.75</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Falafel Sandwich</p><p class="price">$ 3.50</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Banh Mi Sandwich</p><p class="price">$ 4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Grilled Sandwich</p><p class="price">$ 4.50</p>
+                        </article>
+                    </div>
+                    <div class="menu-menu-list">
+                        <article class="item">
+                            <p class="item-name">Pastrami Sandwich</p><p class="price">$ 3.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">American club Sandwich</p><p class="price">$ 3.75</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Tuna Sandwich</p><p class="price">$ 3.50</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Steak Sandwich</p><p class="price">$ 4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Double Decker Sandwich</p><p class="price">$ 4.50</p>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- DOUGHNUT MENU -->
-    <section class="doughnut-menu">
-        <div class="doughnut-poster">
-            <h1>Frosted Doughnut</h1>
-            <p>
-                Indulge in the sugary bliss of our Frosted Doughnuts: sweet, 
-                fluffy, and topped with a delightful layer of icing. 
-                A classic treat for your taste buds, perfect any time of day!
-            </p>
-        </div>
-        <div class="menu">
-                <h1>Sweet</h1>
-                <h2>DOUGHNUTS</h2>
-            <div class="doughnut-menus">
-                <div class="menu-menu-list">
-                    <article class="item">
-                        <span class="special"><p class="item-name">Frosted Doughnut</p><p class="price">$ 3.00</p></span>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Churros</p><p class="price">$ 3.75</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Jelly Doughnut</p><p class="price">$ 3.50</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Beignet</p><p class="price">$ 4.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Cruller</p><p class="price">$ 4.50</p>
-                    </article>
-                </div>
-                <div class="menu-menu-list">
-                    <article class="item">
-                        <p class="item-name">Fritters</p><p class="price">$ 3.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Zeppole</p><p class="price">$ 3.75</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Malasadas</p><p class="price">$ 3.50</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Glazed Doughnut</p><p class="price">$ 4.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Cider Doughnut</p><p class="price">$ 4.50</p>
-                    </article>
+        </section>
+
+        <!-- DOUGHNUT MENU -->
+        <section class="doughnut-menu">
+            <div class="doughnut-poster">
+                <img src="images/doughnutPoster.jpg" alt="">
+            </div>
+            <div class="menu">
+                    <h1>Sweet</h1>
+                    <h2>DOUGHNUTS</h2>
+                <div class="doughnut-menus">
+                    <div class="menu-menu-list">
+                        <article class="item">
+                            <span class="special"><p class="item-name">Frosted Doughnut</p><p class="price">$ 3.00</p></span>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Churros</p><p class="price">$ 3.75</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Jelly Doughnut</p><p class="price">$ 3.50</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Beignet</p><p class="price">$ 4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Cruller</p><p class="price">$ 4.50</p>
+                        </article>
+                    </div>
+                    <div class="menu-menu-list">
+                        <article class="item">
+                            <p class="item-name">Fritters</p><p class="price">$ 3.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Zeppole</p><p class="price">$ 3.75</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Malasadas</p><p class="price">$ 3.50</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Glazed Doughnut</p><p class="price">$ 4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Cider Doughnut</p><p class="price">$ 4.50</p>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-     <!-- DESSERT MENU -->
-     <section class="dessert-menu">
-        <div class="dessert-poster">
-            <h1>Crème Brûlée</h1>
-            <p>
-                A creamy, velvety dessert with a caramelized sugar topping. 
-                Savor the rich, custard-filled goodness of our Crème Brûlée 
-                - a decadent finale that's simply irresistible.
-            </p>
-        </div>
-        <div class="menu">
-                <h1>Mouth Watering</h1>
-                <h2>DESSERTS</h2>
-            <div class="dessert-menus">
-                <div class="menu-menu-list">
-                    <article class="item">
-                        <span class="special"><p class="item-name">Crème Brûlée</p><p class="price">$ 3.00</p></span>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Grandipane Galette</p><p class="price">$ 3.75</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Chocolate Tiffin</p><p class="price">$ 3.50</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">cheesecake</p><p class="price">$ 4.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Panna Cotta</p><p class="price">$ 4.50</p>
-                    </article>
-                </div>
-                <div class="menu-menu-list">
-                    <article class="item">
-                        <p class="item-name">macarons</p><p class="price">$ 3.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Molten Cakes</p><p class="price">$ 3.75</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Brownies</p><p class="price">$ 3.50</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Truffle & Torte</p><p class="price">$ 4.00</p>
-                    </article>
-                    <article class="item">
-                        <p class="item-name">Treacle Tart</p><p class="price">$ 4.50</p>
-                    </article>
+        </section>
+
+        <!-- DESSERT MENU -->
+        <section class="dessert-menu">
+            <div class="dessert-poster">
+                <img src="images/dessertPoster.jpg" alt="">
+            </div>
+            <div class="menu">
+                    <h1>Mouth Watering</h1>
+                    <h2>DESSERTS</h2>
+                <div class="dessert-menus">
+                    <div class="menu-menu-list">
+                        <article class="item">
+                            <span class="special"><p class="item-name">Crème Brûlée</p><p class="price">$ 3.00</p></span>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Grandipane Galette</p><p class="price">$ 3.75</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Chocolate Tiffin</p><p class="price">$ 3.50</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">cheesecake</p><p class="price">$ 4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Panna Cotta</p><p class="price">$ 4.50</p>
+                        </article>
+                    </div>
+                    <div class="menu-menu-list">
+                        <article class="item">
+                            <p class="item-name">macarons</p><p class="price">$ 3.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Molten Cakes</p><p class="price">$ 3.75</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Brownies</p><p class="price">$ 3.50</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Truffle & Torte</p><p class="price">$ 4.00</p>
+                        </article>
+                        <article class="item">
+                            <p class="item-name">Treacle Tart</p><p class="price">$ 4.50</p>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-
-
+    </main>
 
     <!-- FOOTER -->
     <footer>
@@ -266,21 +233,21 @@
             </p>
         </div>
         <div class="footer-links">
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="Menu.html">Menu</a>
-            <a href="#">Sign up & Pricing</a>
             <a href="AboutUs.html">About Us</a>
-            <a href="#">Contacts</a>
+            <a href="#">Review</a>
+            <a href="#">Order</a>
         </div>
         <div class="socials">
             <div class="follow">
                 <p>FOLLOW US</p>
             </div>
             <div class="social-icons">
-                <a href="#"><img src="/images/facebook (2).png" alt=""></a>
-                <a href="#"><img src="/images/instagram (4).png" alt=""></a>
-                <a href=""><img src="/images/pinterest.png" alt=""></a>
-                <a href=""><img src="/images/email.png" alt=""></a>
+                <a href="#"><img src="/images/socialIcons (3).png" alt=""></a>
+                <a href="#"><img src="/images/socialIcons (4).png" alt=""></a>
+                <a href=""><img src="/images/socialIcons (1).png" alt=""></a>
+                <a href=""><img src="/images/socialIcons (2).png" alt=""></a>
             </div>
         </div>
         <div class="contact">
@@ -291,5 +258,42 @@
             </p>
         </div>
     </footer>
+
+    <!-- JAVASCRIPT CODES -->
+    <script>
+        let isOpen = false;
+
+        function initNav() {
+            const header = document.querySelector('header');
+            // Check the screen width and initially hide the header on smaller screens
+            if (window.innerWidth <= 480) {
+                header.style.display = 'none';
+            }
+        }
+
+        function toggleNav() {
+            isOpen = !isOpen;
+            const bar1 = document.getElementById("bar1");
+            const bar2 = document.getElementById("bar2");
+            const bar3 = document.getElementById("bar3");
+            const header = document.querySelector('header');
+
+            if (isOpen) {
+                bar1.style.transform = 'rotate(-45deg) translate(-5px, 6px)';
+                bar2.style.opacity = '0';
+                bar3.style.transform = 'rotate(45deg) translate(-5px, -6px)';
+                header.style.display = 'block'; // Display the header when the menu is open
+            } else {
+                bar1.style.transform = 'none';
+                bar2.style.opacity = '1';
+                bar3.style.transform = 'none';
+                // Check screen width and hide the header on smaller screens when the menu is closed
+                if (window.innerWidth <= 480) {
+                    header.style.display = 'none';
+                }
+            }
+        }
+        window.onload = initNav;
+    </script>
 </body>
 </html>
